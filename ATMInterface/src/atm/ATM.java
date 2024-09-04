@@ -15,7 +15,8 @@ public class ATM {
         bankAccount.depot(montant);
     }
 
-    public void checkBalance() {
+    public double checkBalance() {
         System.out.println("Solde courant: " + bankAccount.getSolde());
+        return bankAccount.getSolde();
     }
 }
